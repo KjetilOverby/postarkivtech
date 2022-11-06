@@ -74,7 +74,6 @@ const TechButton = ({ title, icon, link, info }: BtnProps) => {
             margin-top: -42px;
           }
           .bottom:hover {
-            background: #00f7ff;
             opacity: 0.5;
           }
           .skew {

@@ -133,10 +133,13 @@ interface PosterProps {
       type: Date;
     };
   };
+  skurliste: {
+    length: {};
+  };
 }
 [];
 
-export default function Home({ poster }: PosterProps) {
+export default function Home({ poster, skurliste }: PosterProps) {
   return (
     <div className={styles.container}>
       <Head>
@@ -156,6 +159,8 @@ export default function Home({ poster }: PosterProps) {
           <TechButton
             icon={<FaClipboardList style={{ marginRight: "1rem" }} />}
             title="Skurliste"
+            link="/skurliste"
+            info={`(${skurliste && skurliste.length})`}
           />
           <TechButton
             icon={<FaDatabase style={{ marginRight: "1rem" }} />}

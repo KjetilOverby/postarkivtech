@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [poster, setPoster] = useState();
+  const [skurliste, setSkurliste] = useState();
   const api = axios.create({
     baseURL: process.env.api,
   });
@@ -29,7 +30,25 @@ export default function App({ Component, pageProps }: AppProps) {
       });
   }, []);
 
-  console.log(poster && poster);
+  useEffect(() => {
+    const api = axios.create({
+      baseURL: process.env.api,
+    });
 
-  return <Component {...pageProps} poster={poster} />;
+    api
+      .get("/api/skurliste")
+      .then(function (response) {
+        // handle success
+        setSkurliste(response.data.data);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function () {
+        // always executed
+      });
+  }, []);
+
+  return <Component {...pageProps} poster={poster} skurliste={skurliste} />;
 }
