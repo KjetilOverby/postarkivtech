@@ -37,6 +37,7 @@ const SearchComponent = ({ setInput }: InputProps) => {
             top: 1rem;
             background: transparent;
             outline: none;
+            border: none;
           }
           .cn {
             color: #999;
@@ -144,6 +145,11 @@ const SearchComponent = ({ setInput }: InputProps) => {
             }
             100% {
               box-shadow: 0 0 13px rgba(17, 241, 255, 0.6) inset;
+            }
+          }
+          @media only screen and (max-width: 2100px) {
+            .container {
+              width: 18rem;
             }
           }
         `}

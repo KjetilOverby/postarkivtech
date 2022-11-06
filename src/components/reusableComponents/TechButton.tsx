@@ -5,16 +5,17 @@ interface BtnProps {
   title: string;
   icon: JSX.Element;
   link?: string;
+  info?: string;
 }
 
-const TechButton = ({ title, icon, link }: BtnProps) => {
+const TechButton = ({ title, icon, link, info }: BtnProps) => {
   return (
     <>
       <div className="container">
         <a className="holo-btn-fed" href={link}>
           <span className="cta-d">
             {icon}
-            {title}
+            {title} {info}
           </span>
           <span className="skew top"></span>
           <span className="skew bottom"></span>
@@ -132,6 +133,12 @@ const TechButton = ({ title, icon, link }: BtnProps) => {
             }
             100% {
               box-shadow: 0 0 13px rgba(17, 241, 255, 0.6) inset;
+            }
+          }
+
+          @media only screen and (max-width: 2100px) {
+            .container {
+              width: 18rem;
             }
           }
         `}
