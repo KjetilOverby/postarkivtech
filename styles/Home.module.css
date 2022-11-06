@@ -1,0 +1,14 @@
+.container {
+  background: url('https://lh3.googleusercontent.com/pw/AL9nZEX9rOqqMmOlm5eBVJZagvukTVDAYpHSFAoIRAyxYIhcJXVz1A0Nf7yvwZ_oTHrlbKuX_Huw8JlQFdgBYEBhHYdoSz5Oybg8wliI16NtPuYUkR-MLgrbhdWS9KxJVw0ZZa-ANHaJq3aFjoi-Ziqrr2vj=w4206-h2366-no?authuser=0');
+  
+  background-size: cover;
+  height: 100vh;
+ 
+ 
+}
+.header {
+  color: #00f7ff;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  font-weight: 100
+}
