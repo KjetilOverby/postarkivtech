@@ -27,6 +27,7 @@ const TechButton = ({ title, icon, link, info }: BtnProps) => {
           .container {
             width: 25rem;
             margin-bottom: 2rem;
+            outline: none;
           }
           a {
             color: #999;
@@ -34,7 +35,7 @@ const TechButton = ({ title, icon, link, info }: BtnProps) => {
             text-transform: uppercase;
             display: block;
             height: 60px;
-            transition: all 330ms linear;
+            transition: all 100ms linear;
           }
           a:hover {
             color: #fff;
@@ -84,7 +85,7 @@ const TechButton = ({ title, icon, link, info }: BtnProps) => {
             animation: holox-pen 5.4s ease 1s infinite;
             padding: 24px;
             display: block;
-            transition: all 330ms linear;
+            transition: all 100ms linear;
             box-shadow: 0 0 13px rgba(102, 102, 102, 0.6) inset;
           }
           span {
@@ -101,7 +102,7 @@ const TechButton = ({ title, icon, link, info }: BtnProps) => {
             vertical-align: middle;
             margin-right: 22px;
             padding-bottom: 4px;
-            transition: margin 500ms cubic-bezier(0.79, 0.01, 1, 0.21);
+            transition: margin 100ms cubic-bezier(0.79, 0.01, 1, 0.21);
           }
           .holo-btn-fed span {
             text-shadow: 0 0 30px #11f1ff;
@@ -138,6 +139,11 @@ const TechButton = ({ title, icon, link, info }: BtnProps) => {
           @media only screen and (max-width: 2100px) {
             .container {
               width: 18rem;
+            }
+          }
+          @media only screen and (max-width: 1000px) {
+            .container {
+              width: 100%;
             }
           }
         `}

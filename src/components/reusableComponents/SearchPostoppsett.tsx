@@ -125,6 +125,16 @@ const SearchPostoppsett = ({ searchResult }: any) => {
             animation-name: holox-fed;
             box-shadow: 0 0 13px rgba(17, 241, 255, 0.6) inset;
           }
+          @media only screen and (max-width: 756px) {
+            .ring {
+              width: 20px;
+              font-size: 0.5rem;
+              height: 45px;
+            }
+            .result-container {
+              width: 100%;
+            }
+          }
         `}
       </style>
     </>

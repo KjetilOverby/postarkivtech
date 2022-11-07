@@ -167,7 +167,6 @@ const Search = ({ poster }: SearchResultProps) => {
                   </p>
                 </div>
               </div>
-
               <div className="post-container">
                 <SearchPostoppsett searchResult={searchResult} />
               </div>
@@ -209,6 +208,20 @@ const Search = ({ poster }: SearchResultProps) => {
         @media only screen and (max-width: 2100px) {
           .inner-container {
             grid-template-columns: 25rem 1fr;
+          }
+        }
+        @media only screen and (max-width: 1000px) {
+          .inner-container {
+            grid-template-columns: 1fr;
+            height: 22rem;
+          }
+          .post-container {
+            height: 50rem;
+            overflow: scroll;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 25rem;
           }
         }
       `}</style>

@@ -23,7 +23,7 @@ const skurliste = ({ skurliste }: SkurlisteProps) => {
               icon={<IoIosArrowBack style={{ marginRight: ".5rem" }} />}
               link="/"
             />
-            <div>
+            <div className="table-container">
               <table>
                 <thead>
                   <tr>
@@ -112,6 +112,38 @@ const skurliste = ({ skurliste }: SkurlisteProps) => {
             cursor: pointer;
             color: rgba(17, 241, 255, 0.5);
           }
+          @media only screen and (max-width: 1000px) {
+          table {
+             table-layout: auto;
+             width: 100%;
+            font-size: 8px;
+            position: absolute;
+            left: 0
+           }
+           td,
+          th {
+            
+          
+            padding: 5px;
+          }
+         
+    }
+          @media only screen and (max-width: 756px) {
+          table {
+             table-layout: auto;
+             width: 100%;
+            font-size: 8px;
+            position: absolute;
+            left: 0
+           }
+           td,
+          th {
+            
+          
+            padding: 0px;
+          }
+         
+    }
         `}
       </style>
     </>
