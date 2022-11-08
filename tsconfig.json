@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "models/Poster.js", "pages/api/poster.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "models/Poster.js", "pages/api/poster.js", "pages/api/hello/middleware.js", "pages/api/_middleware.js"],
   "exclude": ["node_modules"]
 }
